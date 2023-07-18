@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');  
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap'); 
+
+:root{
+    --fonte-titulo:'Aladin', cursive;
+    --fonte-titulo-section: 'Yatra One', cursive;
+    --fonte-descricao:'Noto Serif', serif;
+
+    --cor01:#FFFFFF;
+    --cor02: #000000;
+    --cor03: #e6005c;
+    --cor04: #80bfff;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header{
+background-color: var(--cor04);
+color: var(--cor01);
+text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    font-family: var(--fonte-titulo);
+    color: var(--cor03);
+    font-size: 8vw;
+}
+
+header > p{
+    padding-bottom: 50px;
+}
+
+.barra-de-navegacao{
+    background-color: var(--cor03);
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+a.navmenu{
+    margin: 17px;
+}
+
+a{
+    color: var(--cor01);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover{
+    color: var(--cor03);
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1em;
+    padding-left: 20px;
+    font-family: var(--fonte-titulo-section);
+    font-size: 1.5vw;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section.produto{
+    background-color: var(--cor01);
+    color: var(--cor02);
+}
+
+section.img{
+    background-color: var(--cor04);
+    color: var(--cor01);
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.562);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img1{
+    background-image: url('../imagem/asian-snacks-header-image.PNG');
+    background-position: right center;
+}
+
+section#img2{
+    background-image: url('../imagem/snacks-fundo-1.png');
+    background-position: right center;
+}
