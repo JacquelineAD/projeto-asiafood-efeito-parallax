@@ -14,6 +14,7 @@
     --cor01:#FFFFFF;
     --cor02: #000000;
     --cor03: #e6005c;
+    --corletras:#ec659b;
     --cor04: #80bfff;
 }
 
@@ -36,28 +37,44 @@ header > h1{
     font-size: 8vw;
 }
 
+.frase-efeito{
+    color: var(--cor01);
+    font-family: var(--fonte-titulo-section);
+    
+}
+
 header > p{
     padding-bottom: 50px;
 }
 
 .barra-de-navegacao{
     background-color: var(--cor03);
-    padding: 10px 0px 10px 0px;
+    padding: 15px 0px 15px 0px;
     text-align: center;
 }
 
 a.navmenu{
     margin: 17px;
+    color: var(--cor01);
+    text-decoration: none;
+    font-size: 20px;
+    
 }
 
-a{
-    color: var(--cor01);
+a.navmenu:hover{
+    color: var(--cor04);
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+a.link-rodape{
+    color: var(--cor03);
     text-decoration: none;
     font-weight: bold;
 }
 
-a:hover{
-    color: var(--cor03);
+a.link-rodape:hover{
+    color: var(--corletras);
     text-decoration: underline;
     transition: 0.5s;
 }
@@ -71,13 +88,25 @@ section{
     font-size: 1.5vw;
 }
 
+
+
 section > p{
     padding-bottom: 2em;
+    
+
+}
+
+.titulo-produto{
+    color: var(--cor03);
+    font-size: 50px;
+    padding-bottom: 20px;
 }
 
 section.produto{
     background-color: var(--cor01);
     color: var(--cor02);
+    display: flex;
+    align-items: center;
 }
 
 section.img{
@@ -86,6 +115,27 @@ section.img{
     box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.562);
     background-size: cover;
     background-attachment: fixed;
+    padding-top: 8em;
+}
+
+section.img-do-produto{
+    flex: 0 0 auto;
+    margin-right: 10px;
+    
+}
+
+.link-p-mais{
+    color: var(--cor03);
+    margin-top: 20px;
+    font-weight: 200;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    font-family: var(--fonte-descricao);
+}
+
+.link-p-mais:hover{
+    color: var(--corletras);
+    transition: 0.5s;
 }
 
 section#img1{
@@ -96,4 +146,12 @@ section#img1{
 section#img2{
     background-image: url('../imagem/snacks-fundo-1.png');
     background-position: right center;
+}
+
+footer.rodape{
+background-color: var(--cor04);
+padding: 25px;
+font-family: var(--fonte-titulo-section);
+font-size: 20px;
+text-align: center;
 }
